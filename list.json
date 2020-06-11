@@ -1,0 +1,83 @@
+[
+  {
+
+    "sender": "BankA",
+
+    "receiver": "BankB",
+
+    "amount": "100"
+
+  },
+
+  {
+
+    "sender": "BankB",
+
+    "receiver": "BankC",
+
+    "amount": "20"
+
+  },
+
+  {
+
+    "sender": "BankB",
+
+    "receiver": "BankC",
+
+    "amount": "120"
+
+  },
+
+  {
+
+    "sender": "BankA",
+
+    "receiver": "BankB",
+
+    "amount": "150"
+
+  },
+
+  {
+
+    "sender": "BankC",
+
+    "receiver": "BankB",
+
+    "amount": "200"
+
+  },
+
+  {
+
+    "sender": "BankC",
+
+    "receiver": "BankA",
+
+    "amount": "100"
+
+  },
+
+  {
+
+    "sender": "BankD",
+
+    "receiver": "BankF",
+
+    "amount": "100"
+
+  },
+
+  {
+
+    "sender": "BankF",
+
+    "receiver": "BankD",
+
+    "amount": "100"
+
+  }
+
+]
+

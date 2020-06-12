@@ -63,10 +63,9 @@ namespace ConsoleApp2
 
         private static void CompareAndAddToList(List<TranItem> finalList, TranItem newRecord)
         {
-            TranItem toBeAdded = newRecord;
-            if (finalList.Any(x => x.Receiver == newRecord.Sender && x.Sender == newRecord.Receiver))
+            TranItem inListItem = finalList.FirstOrDefault(x => x.Receiver == newRecord.Sender && x.Sender == newRecord.Receiver);
+            if (inListItem!=null)
             {
-                TranItem inListItem = finalList.FirstOrDefault(x => x.Receiver == newRecord.Sender && x.Sender == newRecord.Receiver);
                 if (newRecord.Amount >= inListItem.Amount)
                 {
                     newRecord.Amount -= inListItem.Amount;
@@ -78,9 +77,10 @@ namespace ConsoleApp2
                     return;
                 }
             }
-            if (toBeAdded.Amount != 0)
+
+            if (newRecord.Amount != 0)
             {
-                finalList.Add(toBeAdded);
+                finalList.Add(newRecord);
             }
 
         }
